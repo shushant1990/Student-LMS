@@ -1,0 +1,53 @@
+.lms-page{width: 78%;
+border: dotted 2px  blue;
+margin-top: -1rem;
+padding: 1rem 1rem;
+box-shadow: 5px 5px 5px grey;
+height:100vh;
+
+}
+
+
+.LMS-heading{color: rgb(138, 138, 192);
+text-align: justify;
+margin-top: 2rem;
+max-width: fit-content;
+border-bottom: 5px solid #99bc81;
+width: 1%;
+overflow: hidden;
+white-space: nowrap;
+animation: slideRight 3s infinite;
+text-shadow: 1px 1px 2px #dede0e;
+font-size: 2rem;
+}
+
+@keyframes slideRight{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 100%;
+        
+    }
+}
+
+.lms-ul{line-height: 1.5rem;
+font-size: 1.2rem;
+padding: 1rem 1rem;}
+
+.video-container{
+display: flex;
+justify-content: center;
+margin-top: 2rem;
+
+}
+
+@media(max-width:1000px){
+    .LMS-heading{font-size: 1rem;
+    margin-top: 0;
+line-height: 1.4rem;}
+
+.lms-page{width: 100%;}
+
+}
+

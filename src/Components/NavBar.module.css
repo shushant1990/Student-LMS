@@ -1,0 +1,101 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.nav-bar {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  padding: .5rem 1rem;
+  box-shadow: 5px 5px 5px rgb(211, 205, 205);
+}
+
+.brillica-logo {
+  width: 10%;
+}
+.brillica-logo img {
+  width: 100%;
+  height: 100%;
+}
+
+.bellicon {
+  font-size: 1.5rem;
+  position: absolute;
+  right: 15rem;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.s {
+  background-color: #30308a;
+  color: white;
+  width: 2.5rem;
+  height: 2.5rem;
+  padding: 1rem;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 700;
+}
+
+.student-profile {
+  display: flex;
+  align-items: center;
+  font-weight: 700;
+  cursor: pointer;
+  gap: 0.5rem;
+}
+
+.hi-name {
+  width: 8rem;
+  color: #30308a;
+}
+
+@media (max-width: 1000px) {
+  .brillica-logo {
+    width: 15%;
+    mix-blend-mode: color-burn;
+  }
+}
+
+@media (max-width: 750px) {
+  .brillica-logo {
+    width: 7rem;
+    mix-blend-mode: color-burn;
+  }
+ .nav-bar{display: flex;
+justify-content: space-between;
+align-items: center;
+}
+
+}
+
+@media (max-width: 600px) {
+    .brillica-logo {
+      width: 7rem;
+      mix-blend-mode: color-burn;
+      position: absolute;
+      left: 3rem;
+      top: 0rem;
+    }
+   .nav-bar{display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  }
+  .student-profile ,.bellicon{margin-right: -7rem;}
+
+  }
+
+  @media(max-width:400px){
+    .hi-name{display: none;}
+    .bellicon{right: 5rem;}
+  }

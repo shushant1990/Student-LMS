@@ -1,0 +1,104 @@
+.show-transaction-history {
+  position: absolute;
+  /* left: 18rem;
+top:15rem ;
+width: 70%;
+z-index: -1; */
+  top: 30%;
+  left: 30%;
+  translate: -50px, 50px;
+}
+
+.table {
+  padding: 1rem 2rem;
+  width: 100%;
+  box-shadow: 5px 5px 2px grey;
+}
+.table th {
+  background-color: rgb(31, 31, 34);
+  padding: 1rem;
+  color: var(--white-color);
+}
+
+.data-table-row:nth-child(even) {
+  background-color: rgb(230, 218, 218);
+  color: var(--color-black);
+  font-weight: var(--font-weight);
+}
+
+.data-table-row:nth-child(odd) {
+  background-color: #30308a;
+  color: white;
+  font-weight: var(--font-weight);
+}
+
+.data-table-row td {
+  padding: 1rem;
+}
+
+@media (max-width: 1100px) {
+  .show-transaction-history {
+    width: 90%;
+    position: absolute;
+    top: 5rem;
+    left: 5rem;
+    translate: -50px, 50px;
+  }
+  .table th {
+    padding: 0.7rem;
+  }
+  .data-table-row td {
+    padding: 0.9;
+  }
+}
+
+@media (max-width: 800px) {
+  .show-transaction-history {
+    margin-top: -1rem;
+    padding: 0.5rem;
+  }
+  .table th {
+    padding: 0.5rem;
+  }
+  .data-table-row td {
+    padding: 0.7rem;
+  }
+}
+@media (max-width: 700px) {
+  .show-transaction-history {
+    font-size: 0.8rem;
+    font-weight: 100;
+    margin-top: 1rem;
+    width: 80%;
+  }
+
+  @media (max-width: 600px) {
+    .table {
+      font-size: 0.8rem;
+      font-weight: 100;
+      margin-top: -1rem;
+      width: 100%;
+    }
+    .table th {
+      padding: 1rem;
+    }
+  }
+
+  @media (max-width: 450px) {
+    .table {
+      font-size: 0.8rem;
+      font-weight: 100;
+      margin-top: 1rem;
+    }
+    .data-table-row td {
+      padding: 0;
+    }
+  }
+  .table th {
+    padding: 0;
+  }
+
+  .data-table-row td {
+    padding: 0.5rem;
+  }
+}

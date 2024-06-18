@@ -1,0 +1,30 @@
+.progress-bar-section{width:80%;
+padding: 2rem 2rem;
+position: relative;
+
+}
+.display-status{width:100%;
+    background: linear-gradient(to right ,white,rgb(191, 191, 246));
+    padding: 2rem;
+    box-shadow: var(--box-shadow);
+    position: absolute;
+    z-index: -1;
+}
+.heading-mern{color: #30308a;}
+
+.fee-progress{display: flex;
+justify-content: space-between;}
+.para-fee-progress{padding-top: 1rem;
+color: #99bc81;
+font-weight: var(--font-weight);
+}
+.meter-bar{width: 100%;
+padding: .5rem;
+background-color:#99bc81;
+margin-top: 1rem;
+border-radius: 1rem;
+}
+.percentage-progress{border-bottom: 2px dashed #99bc81;
+    padding: var(--padding-top)}
+
+.reg-date{padding: var(--padding-top);}

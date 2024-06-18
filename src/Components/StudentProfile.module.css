@@ -1,0 +1,121 @@
+.student-profile-parent {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 4rem;
+  background-color: rgba(147, 142, 142, 0.145);
+  backdrop-filter: blur(5px);
+  z-index: 5;
+}
+
+.student-profile-child {
+  background-color: white;
+  position: absolute;
+  right: 2rem;
+  width: 30%;
+  padding-bottom: 2rem;
+  top:2%;
+  box-shadow: 5px 5px 5px grey;
+  border-radius: 1rem;
+  
+}
+.student-name-sign {
+  width: 3rem;
+  height: 3rem;
+  background-color: #30308a;
+  text-align: center;
+  padding: 1rem;
+  color: white;
+  margin: auto;
+  border-radius: 50%;
+  margin-top: -1rem;
+  font-weight: 700;
+  font-size: 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.student-details {
+  border: solid 1px grey;
+  width: 80%;
+  margin: auto;
+  text-align: center;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  margin-top: 0.2rem;
+}
+
+.student-name {
+  font-size: 2rem;
+}
+.student-details div {
+  padding-top: 0.2rem;
+}
+
+.chat-support {
+  display: flex;
+  justify-content: start;
+  gap: 2rem;
+  align-items: center;
+  position: relative;
+  border: solid 1px grey;
+  border-radius: .5rem;
+  width: 80%;
+  margin: auto;
+  margin-top: 1rem;
+  padding: 1rem;
+  
+}
+
+.link{text-decoration: none;
+color:black;}
+
+.chat-icon{display: flex;
+justify-content: center;
+align-items: center;
+font-size: 1.2rem;}
+
+.right-arrow {
+  position: absolute;
+  right: 0;
+  font-size: 1.2rem;
+}
+
+.remove-student-profile{
+right: 1rem;
+position: absolute;
+font-size: 2rem;
+color: red;
+cursor: pointer;
+}
+
+@media(max-width:1000px){
+  .student-profile-child{width:40%;
+position: absolute;
+top: 1%;
+left: 25%;
+}
+.chat-support{gap:1rem;}
+}
+
+@media(max-width:700px){
+  .student-profile-child{width:100%;
+position: absolute;
+top: 1%;
+left: 1%;
+z-index: 1;
+}
+.chat-support{gap:1rem;}
+}
+
+
+@media(max-width:400px){
+  .student-profile-parent{width: 80%;}
+  .student-profile-child{width:100%;
+position: absolute;
+top: 1%;
+
+}
+.chat-support{gap:1rem;}
+}
